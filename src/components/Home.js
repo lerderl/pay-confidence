@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Header from "./Header";
 import AppDownload from "./sections/AppDownload";
 import CustomerSupport from "./sections/CustomerSupport";
@@ -14,6 +15,8 @@ const Home = () => {
         <AppDownload />
       </div>
       {/* <!-- Content end -->  */}
+
+      <Footer />
     </div>
   );
 };

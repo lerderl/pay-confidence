@@ -7,7 +7,7 @@ const SignUp = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    navigate('/');
+    navigate('/login');
   };
 
   return (
@@ -148,10 +148,10 @@ const SignUp = () => {
                       </div>
                     </form>
                     <p className="text-3 text-center text-muted">
-                      Already have an account?{" "}
-                      <a className="btn-link" href="login.html">
+                      Already have an account?
+                      <Link className="btn-link" to="/login">
                         Log In
-                      </a>
+                      </Link>
                     </p>
                   </div>
                 </div>
@@ -164,14 +164,14 @@ const SignUp = () => {
 
       {/* <!-- Back to Top
       ============================================= -->  */}
-      <a
+      {/* <a
         id="back-to-top"
         data-bs-toggle="tooltip"
         title="Back to Top"
         href="javascript:void(0)"
       >
         <i className="fa fa-chevron-up"></i>
-      </a>
+      </a> */}
     </>
   );
 };

@@ -1,4 +1,5 @@
 import Header from "./Header";
+import AppDownload from "./sections/AppDownload";
 import CustomerSupport from "./sections/CustomerSupport";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
       ============================================= --> */}
       <div id="content">
         <CustomerSupport />
+        <AppDownload />
       </div>
       {/* <!-- Content end -->  */}
     </div>

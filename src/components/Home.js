@@ -112,9 +112,10 @@ const Home = () => {
               <div className="ratio ratio-16x9">
                 <iframe
                   id="video"
-                  src=""
+                  src="https://www.youtube.com/embed/7e90gBu4pas"
                   allow="autoplay;"
                   allowfullscreen
+                  title="title"
                 ></iframe>
               </div>
             </div>

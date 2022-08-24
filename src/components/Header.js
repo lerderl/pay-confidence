@@ -22,7 +22,7 @@ const Header = () => {
             <nav className="primary-menu navbar navbar-expand-lg">
               <div id="header-nav" className="collapse navbar-collapse">
                 <ul className="navbar-nav me-auto">
-                  <li className="active"><Link to="/">Home</Link></li>
+                  <li><Link to="/">Home</Link></li>
                   <li><Link to="/about-us">About Us</Link></li>
                   <li><Link to="/fees">Fees</Link></li>
                   <li><Link to="/help">Help</Link></li>

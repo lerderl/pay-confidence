@@ -16,6 +16,7 @@ import {
 
 import Footer from "./Footer";
 import Header from "./Header";
+import Video from "./modals/Video";
 import How from "../images/how-work.jpg";
 import slide1 from "../images/bg/image-1.jpg";
 import slide2 from "../images/bg/image-2.jpg";
@@ -427,32 +428,7 @@ const Home = () => {
 
       {/* <!-- Video Modal
       ============================================= --> */}
-      <div className="modal fade" id="videoModal" tabindex="-1" role="dialog">
-        <div
-          role="document"
-          className="modal-dialog modal-lg modal-dialog-centered"
-        >
-          <div className="modal-content bg-transparent border-0">
-            <button
-              type="button"
-              aria-label="Close"
-              data-bs-dismiss="modal"
-              className="btn-close btn-close-white ms-auto me-n3"
-            ></button>
-            <div className="modal-body p-0">
-              <div className="ratio ratio-16x9">
-                <iframe
-                  id="video"
-                  title="title"
-                  allowfullscreen
-                  allow="autoplay;"
-                  src="https://www.youtube.com/embed/7e90gBu4pas"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Video />
       {/* <!-- Video Modal end -->  */}
     </div>
   );

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Slide } from "react-slideshow-image";
 import { FaChevronRight, FaQuoteLeft } from "react-icons/fa";
 
@@ -63,10 +64,10 @@ const Testimonials = () => {
           </Slide>                
         </div>
         <div className="text-center mt-4">
-          <a href="#" className="btn-link text-4">
+          <Link to="/" className="btn-link text-4">
             See more people review
             <FaChevronRight className="text-2 ms-2" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

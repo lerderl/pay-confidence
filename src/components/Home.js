@@ -5,7 +5,6 @@ import {
   FaLock,
   FaPlay,
   FaShare,
-  FaQuoteLeft,
   FaDollarSign,
   FaCheckSquare,
   FaHandPointer,
@@ -18,11 +17,11 @@ import {
 import Footer from "./Footer";
 import Header from "./Header";
 import How from "../images/how-work.jpg";
-import Testimonials from "./Testimonials";
 import slide1 from "../images/bg/image-1.jpg";
 import slide2 from "../images/bg/image-2.jpg";
 import slide3 from "../images/bg/image-3.jpg";
 import AppDownload from "./sections/AppDownload";
+import Testimonials from "./sections/Testimonials";
 import CustomerSupport from "./sections/CustomerSupport";
 import Freelancer from "../images/anyone-freelancer.jpg";
 import OnlineSellers from "../images/anyone-online-sellers.jpg";

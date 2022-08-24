@@ -3,13 +3,31 @@ import Header from "./Header";
 import { Link } from "react-router-dom";
 import { Slide } from "react-slideshow-image";
 import 'react-slideshow-image/dist/styles.css'
-import { FaChevronRight, FaDollarSign, FaHandPointer, FaLock, FaPlay, FaShare } from "react-icons/fa";
+import {
+  FaCheck,
+  FaLock,
+  FaPlay,
+  FaShare,
+  FaQuoteLeft,
+  FaDollarSign,
+  FaCheckSquare,
+  FaHandPointer,
+  FaShareSquare,
+  FaShoppingBag,
+  FaUserFriends,
+  FaChevronRight
+} from "react-icons/fa";
 
+import How from "../images/how-work.jpg";
 import slide1 from "../images/bg/image-1.jpg";
 import slide2 from "../images/bg/image-2.jpg";
 import slide3 from "../images/bg/image-3.jpg";
 import AppDownload from "./sections/AppDownload";
 import CustomerSupport from "./sections/CustomerSupport";
+import Freelancer from "../images/anyone-freelancer.jpg";
+import OnlineSellers from "../images/anyone-online-sellers.jpg";
+import OnlineShopping from "../images/anyone-online-shopping.jpg";
+import AffiliateMarketing from "../images/anyone-affiliate-marketing.jpg";
 
 const slideImages = [
   {
@@ -28,10 +46,43 @@ const slideImages = [
   },
   {
     url: slide3,
-    caption: 'Building Trust Accross businesses.',
+    caption: 'Building Trust Across businesses.',
     textDescription: "Successfully completing Thousands of Transactions in Link Flash.",
     linkDescription: "Get started for free",
     videoText: "Watch Demo"
+  },
+];
+
+const testimonials = [
+  {
+    comment: "Easy to use, reasonably priced simply dummy text of the printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam possim iriure.",
+    name: "Jay Shah",
+    position: "Founder at Icomatic Pvt Ltd"
+  },
+  {
+    comment: "I am happy Working with printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam persequeris essent possim iriure.",
+    name: "Patrick Cary",
+    position: "Freelancer from USA"
+  },
+  {
+    comment: "Fast easy to use transfers to a different currency. Much better value that the banks.",
+    name: "De Mortel",
+    position: "Online Retail"
+  },
+  {
+    comment: "I have used them twice now. Good rates, very efficient service and it denies high street banks an undeserved windfall. Excellent.",
+    name: "Chris Tom",
+    position: "User from UK"
+  },
+  {
+    comment: "It's a real good idea to manage your money by PayConfidence. The rates are fair and you can carry out the transactions without worrying!",
+    name: "Mauri Lindberg",
+    position: "Freelancer from Australia"
+  },
+  {
+    comment: "Only trying it out since a few days. But up to now excellent. Seems to work flawlessly. I'm only using it for sending money to friends at the moment.",
+    name: "Dennis Jacques",
+    position: "User from USA"
   },
 ];
 
@@ -55,7 +106,14 @@ const Home = () => {
                   style={{ backgroundImage: `url(${val.url})` }}
                 ></div>
                 <div className="hero-content text-center fullscreen-with-header py-5">
-                  <span><h2 className="text-16 text-white"  style={{ marginTop: "150px" }}>{val.caption}</h2></span>
+                  <span>
+                    <h2
+                      className="text-16 text-white"
+                      style={{ marginTop: "150px" }}
+                    >
+                      {val.caption}
+                    </h2>
+                  </span>
                   <span>
                     <p className="text-5 text-white mb-4">
                       {val.textDescription}
@@ -65,7 +123,7 @@ const Home = () => {
                     <Link to="/" className="btn btn-success m-2">
                       {val.linkDescription}
                     </Link>
-                  </span>                  
+                  </span>
                   <span>
                     <Link
                       className="btn btn-outline-light video-btn m-2"
@@ -79,7 +137,7 @@ const Home = () => {
                       </span>
                       {val.videoText}
                     </Link>
-                  </span>                  
+                  </span>
                 </div>
               </section>
             ))}
@@ -91,41 +149,345 @@ const Home = () => {
         ============================================= --> */}
         <section className="section bg-white">
           <div className="container">
-            <h2 className="text-9 text-center">Why should you choose PayConfidence?</h2>
-            <p className="lead text-center mb-5">Here's Top 4 reasons why using a PayConfidence account to manage your money pays.</p>
+            <h2 className="text-9 text-center">
+              Why should you choose PayConfidence?
+            </h2>
+            <p className="lead text-center mb-5">
+              Here's Top 4 reasons why using a PayConfidence account to manage
+              your money pays.
+            </p>
             <div className="row gy-5">
               <div className="col-sm-6 col-lg-3">
                 <div className="featured-box">
-                  <div className="featured-box-icon text-success"> <FaHandPointer /> </div>
+                  <div className="featured-box-icon text-success">
+                    <FaHandPointer />
+                  </div>
                   <h3>Easy to use</h3>
-                  <p className="text-3">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
-                  <Link to="/" className="btn-link text-3">Learn more <FaChevronRight className="text-1 ms-2" /></Link> </div>
+                  <p className="text-3">
+                    Lisque persius interesset his et, in quot quidam persequeris
+                    vim, ad mea essent possim iriure.
+                  </p>
+                  <Link to="/" className="btn-link text-3">
+                    Learn more
+                    <FaChevronRight className="text-1 ms-2" />
+                  </Link>
+                </div>
               </div>
               <div className="col-sm-6 col-lg-3">
                 <div className="featured-box">
-                  <div className="featured-box-icon text-success"> <FaShare /> </div>
+                  <div className="featured-box-icon text-success">
+                    <FaShare />
+                  </div>
                   <h3>Faster Payments</h3>
-                  <p className="text-3">Persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
-                  <Link to="/" className="btn-link text-3">Learn more <FaChevronRight className="text-1 ms-2" /></Link> </div>
+                  <p className="text-3">
+                    Persius interesset his et, in quot quidam persequeris vim,
+                    ad mea essent possim iriure.
+                  </p>
+                  <Link to="/" className="btn-link text-3">
+                    Learn more
+                    <FaChevronRight className="text-1 ms-2" />
+                  </Link>
+                </div>
               </div>
               <div className="col-sm-6 col-lg-3">
                 <div className="featured-box">
-                  <div className="featured-box-icon text-success"> <FaDollarSign /> </div>
+                  <div className="featured-box-icon text-success">
+                    <FaDollarSign />
+                  </div>
                   <h3>Lower Fees</h3>
-                  <p className="text-3">Essent lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
-                  <Link to="/" className="btn-link text-3">Learn more <FaChevronRight className="text-1 ms-2" /></Link> </div>
+                  <p className="text-3">
+                    Essent lisque persius interesset his et, in quot quidam
+                    persequeris vim, ad mea essent possim iriure.
+                  </p>
+                  <Link to="/" className="btn-link text-3">
+                    Learn more
+                    <FaChevronRight className="text-1 ms-2" />
+                  </Link>
+                </div>
               </div>
               <div className="col-sm-6 col-lg-3">
                 <div className="featured-box">
-                  <div className="featured-box-icon text-success"> <FaLock /> </div>
+                  <div className="featured-box-icon text-success">
+                    <FaLock />
+                  </div>
                   <h3>100% secure</h3>
-                  <p className="text-3">Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
-                  <Link to="/" className="btn-link text-3">Learn more <FaChevronRight className="text-1 ms-2" /></Link> </div>
+                  <p className="text-3">
+                    Quidam lisque persius interesset his et, in quot quidam
+                    persequeris vim, ad mea essent possim iriure.
+                  </p>
+                  <Link to="/" className="btn-link text-3">
+                    Learn more
+                    <FaChevronRight className="text-1 ms-2" />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
         </section>
         {/* <!-- Why choose end -->  */}
+
+        {/* <!-- Payment Solutions
+        ============================================= --> */}
+        <section className="section">
+          <div className="container overflow-hidden">
+            <div className="row g-5">
+              <div className="col-lg-5 col-xl-6 d-flex">
+                <div className="my-auto">
+                  <h2 className="text-9">Payment Solutions for everyone.</h2>
+                  <p className="text-4">
+                    Quidam lisque persius interesset his et, in quot quidam
+                    persequeris vim, ad mea essent possim iriure. Lisque persius
+                    interesset his et, in quot quidam persequeris vim, ad mea
+                    essent possim iriure. lisque persius interesset his et, in
+                    quot quidam mea essent possim iriure.
+                  </p>
+                  <Link to="/" className="btn-link text-4">
+                    Find more solution
+                    <FaChevronRight className="text-2 ms-2" />
+                  </Link>
+                </div>
+              </div>
+              <div className="col-lg-7 col-xl-6">
+                <div className="row g-4 banner style-2 justify-content-center">
+                  <div className="col-12 col-sm-6 text-center">
+                    <div className="item rounded shadow d-inline-block">
+                      <Link to="/">
+                        <div className="caption rounded-bottom">
+                          <h2 className="text-5 fw-400 mb-0">SMEs</h2>
+                        </div>
+                        <div className="banner-mask"></div>
+                        <img
+                          width="410"
+                          alt="banner"
+                          height="350"
+                          src={Freelancer}
+                          className="img-fluid"
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="col-12 col-sm-6 text-center">
+                    <div className="item rounded shadow d-inline-block">
+                      <Link to="/">
+                        <div className="caption rounded-bottom">
+                          <h2 className="text-5 fw-400 mb-0">Retailers</h2>
+                        </div>
+                        <div className="banner-mask"></div>
+                        <img
+                          width="410"
+                          alt="banner"
+                          height="350"
+                          src={OnlineShopping}
+                          className="img-fluid"
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="col-12 col-sm-6 mb-sm-0 text-center">
+                    <div className="item rounded shadow d-inline-block">
+                      <Link to="/">
+                        <div className="caption rounded-bottom">
+                          <h2 className="text-5 fw-400 mb-0">Distributors</h2>
+                        </div>
+                        <div className="banner-mask"></div>
+                        <img
+                          width="410"
+                          alt="banner"
+                          height="350"
+                          src={OnlineSellers}
+                          className="img-fluid"
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="col-12 col-sm-6 text-center">
+                    <div className="item rounded shadow d-inline-block">
+                      <Link to="/">
+                        <div className="caption rounded-bottom">
+                          <h2 className="text-5 fw-400 mb-0">Manufacturers</h2>
+                        </div>
+                        <div className="banner-mask"></div>
+                        <img
+                          width="410"
+                          alt="banner"
+                          height="350"
+                          className="img-fluid"
+                          src={AffiliateMarketing}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <!-- Payment Solutions end -->  */}
+
+        {/* <!-- What can you do
+        ============================================= --> */}
+        <section className="section bg-white">
+          <div className="container">
+            <h2 className="text-9 text-center">
+              What can you do with PayConfidence?
+            </h2>
+            <p className="lead text-center mb-5">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <div className="row g-4">
+              <div className="col-sm-6 col-lg-3">
+                <Link to="/">
+                  <div className="featured-box style-5 rounded">
+                    <div className="featured-box-icon text-success">
+                      <FaShareSquare />
+                    </div>
+                    <h3>Make Payment</h3>
+                  </div>
+                </Link>
+              </div>
+              <div className="col-sm-6 col-lg-3">
+                <Link to="/">
+                  <div className="featured-box style-5 rounded">
+                    <div className="featured-box-icon text-success">
+                      <FaCheckSquare />
+                    </div>
+                    <h3>Receive Payment</h3>
+                  </div>
+                </Link>
+              </div>
+              <div className="col-sm-6 col-lg-3">
+                <Link to="/">
+                  <div className="featured-box style-5 rounded">
+                    <div className="featured-box-icon text-success">
+                      <FaUserFriends />
+                    </div>
+                    <h3>Pay for Service</h3>
+                  </div>
+                </Link>
+              </div>
+              <div className="col-sm-6 col-lg-3">
+                <Link to="/">
+                  <div className="featured-box style-5 rounded">
+                    <div className="featured-box-icon text-success">
+                      <FaShoppingBag />
+                    </div>
+                    <h3>Online Shopping</h3>
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <div className="text-center mt-5">
+              <Link to="/" className="btn-link text-4">
+                See more can you do
+                <FaChevronRight className="text-2 ms-2" />
+              </Link>
+            </div>
+          </div>
+        </section>
+        {/* <!-- What can you do end --> */}
+
+        {/* <!-- How it works
+        ============================================= --> */}
+        <section className="section">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="card bg-dark-3 shadow-sm border-0">
+                  <img
+                    src={How}
+                    width="570"
+                    alt="banner"
+                    height="362"
+                    className="card-img img-fluid opacity-8"
+                  />
+                  <div className="card-img-overlay p-0">
+                    <Link
+                      to="/"
+                      data-bs-toggle="modal"
+                      data-bs-target="#videoModal"
+                      className="d-flex h-100 video-btn"
+                      data-src="https://www.youtube.com/embed/7e90gBu4pas"
+                    >
+                      <span className="playButton playButton-pulsing bg-white m-auto">
+                        <FaPlay />
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6 mt-5 mt-lg-0">
+                <div className="ms-4">
+                  <h2 className="text-9">How does it work?</h2>
+                  <p className="text-4">
+                    Quidam lisque persius interesset his et, in quot quidam
+                    persequeris essent possim iriure. Lorem Ipsum is simply
+                    dummy text of the printing and typesetting industry.
+                  </p>
+                  <ul className="list-unstyled text-3 lh-lg">
+                    <li>
+                      <FaCheck className="me-2" />
+                      Sign Up Account
+                    </li>
+                    <li>
+                      <FaCheck className="me-2" />
+                      Receive & Send Payments from worldwide
+                    </li>
+                    <li>
+                      <FaCheck className="me-2" />
+                      Your funds will be transferred to your local bank account
+                    </li>
+                  </ul>
+                  <Link
+                    to="/"
+                    className="btn btn-outline-success shadow-none mt-2"
+                  >
+                    Open a Free Account
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <!-- How it works end --> */}
+
+        {/* <!-- Testimonial
+        ============================================= --> */}
+        <section className="section bg-white">
+          <div className="container">
+            <h2 className="text-9 text-center">
+              What people are saying about PayConfidence
+            </h2>
+            <p className="lead text-center mb-4">
+              A payments experience people love to talk about
+            </p>
+            <div className="slide-container">
+              <Slide>
+                {testimonials.map((testimonial, index) => (
+                  <div className="testimonial rounded text-center p-4 each-slide" key={index}>
+                    <p className="text-9 text-muted opacity-2 lh-base mb-0">
+                      <FaQuoteLeft />
+                    </p>
+                    <p className="text-4">
+                      “{testimonial.comment}”
+                    </p>
+                    <strong className="d-block fw-500">{testimonial.name}</strong>
+                    <span className="text-muted">
+                      {testimonial.position}
+                    </span>
+                  </div>
+                ))}
+              </Slide>                
+            </div>
+            <div className="text-center mt-4">
+              <a href="#" className="btn-link text-4">
+                See more people review
+                <FaChevronRight className="text-2 ms-2" />
+              </a>
+            </div>
+          </div>
+        </section>
+        {/* <!-- Testimonial end -->  */}
 
         <CustomerSupport />
         <AppDownload />
@@ -138,24 +500,24 @@ const Home = () => {
       ============================================= --> */}
       <div className="modal fade" id="videoModal" tabindex="-1" role="dialog">
         <div
-          className="modal-dialog modal-lg modal-dialog-centered"
           role="document"
+          className="modal-dialog modal-lg modal-dialog-centered"
         >
           <div className="modal-content bg-transparent border-0">
             <button
               type="button"
-              className="btn-close btn-close-white ms-auto me-n3"
-              data-bs-dismiss="modal"
               aria-label="Close"
+              data-bs-dismiss="modal"
+              className="btn-close btn-close-white ms-auto me-n3"
             ></button>
             <div className="modal-body p-0">
               <div className="ratio ratio-16x9">
                 <iframe
                   id="video"
-                  src="https://www.youtube.com/embed/7e90gBu4pas"
-                  allow="autoplay;"
-                  allowfullscreen
                   title="title"
+                  allowfullscreen
+                  allow="autoplay;"
+                  src="https://www.youtube.com/embed/7e90gBu4pas"
                 ></iframe>
               </div>
             </div>

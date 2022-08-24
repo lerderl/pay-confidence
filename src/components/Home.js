@@ -1,9 +1,9 @@
 import Footer from "./Footer";
 import Header from "./Header";
-import { FaPlay } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Slide } from "react-slideshow-image";
 import 'react-slideshow-image/dist/styles.css'
+import { FaChevronRight, FaDollarSign, FaHandPointer, FaLock, FaPlay, FaShare } from "react-icons/fa";
 
 import slide1 from "../images/bg/image-1.jpg";
 import slide2 from "../images/bg/image-2.jpg";
@@ -86,6 +86,46 @@ const Home = () => {
           </Slide>
         </div>
         {/* <!-- Slideshow end -->  */}
+
+        {/* <!-- Why choose
+        ============================================= --> */}
+        <section className="section bg-white">
+          <div className="container">
+            <h2 className="text-9 text-center">Why should you choose PayConfidence?</h2>
+            <p className="lead text-center mb-5">Here's Top 4 reasons why using a PayConfidence account to manage your money pays.</p>
+            <div className="row gy-5">
+              <div className="col-sm-6 col-lg-3">
+                <div className="featured-box">
+                  <div className="featured-box-icon text-success"> <FaHandPointer /> </div>
+                  <h3>Easy to use</h3>
+                  <p className="text-3">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                  <Link to="/" className="btn-link text-3">Learn more <FaChevronRight className="text-1 ms-2" /></Link> </div>
+              </div>
+              <div className="col-sm-6 col-lg-3">
+                <div className="featured-box">
+                  <div className="featured-box-icon text-success"> <FaShare /> </div>
+                  <h3>Faster Payments</h3>
+                  <p className="text-3">Persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                  <Link to="/" className="btn-link text-3">Learn more <FaChevronRight className="text-1 ms-2" /></Link> </div>
+              </div>
+              <div className="col-sm-6 col-lg-3">
+                <div className="featured-box">
+                  <div className="featured-box-icon text-success"> <FaDollarSign /> </div>
+                  <h3>Lower Fees</h3>
+                  <p className="text-3">Essent lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                  <Link to="/" className="btn-link text-3">Learn more <FaChevronRight className="text-1 ms-2" /></Link> </div>
+              </div>
+              <div className="col-sm-6 col-lg-3">
+                <div className="featured-box">
+                  <div className="featured-box-icon text-success"> <FaLock /> </div>
+                  <h3>100% secure</h3>
+                  <p className="text-3">Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                  <Link to="/" className="btn-link text-3">Learn more <FaChevronRight className="text-1 ms-2" /></Link> </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <!-- Why choose end -->  */}
 
         <CustomerSupport />
         <AppDownload />

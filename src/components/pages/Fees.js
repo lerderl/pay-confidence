@@ -65,7 +65,7 @@ const Fees = () => {
                     <p className="text-4 lh-base">
                       A fee on every payment transaction.
                     </p>
-                    <div className="text-primary text-10 pt-3 pb-4 mb-2">
+                    <div className="text-success text-10 pt-3 pb-4 mb-2">
                       up to 1.5%
                     </div>
                     <Link to="/" className="text-muted btn-link text-4">
@@ -88,7 +88,7 @@ const Fees = () => {
                     <p className="text-4 lh-base">
                       Service Charge fee is non refundable.
                     </p>
-                    <div className="text-primary text-10 pt-3 pb-4 mb-2">Free</div>
+                    <div className="text-success text-10 pt-3 pb-4 mb-2">Free</div>
                     <Link to="/" className="text-muted btn-link text-4">
                       Learn more<FaChevronRight className="text-2 ms-2" />
                     </Link>
@@ -109,7 +109,7 @@ const Fees = () => {
                     <p className="text-4 lh-base">
                       No transaction fee for disbursement of funds.
                     </p>
-                    <div className="text-primary text-10 pt-3 pb-4 mb-2">Free</div>
+                    <div className="text-success text-10 pt-3 pb-4 mb-2">Free</div>
                     <Link to="/" className="text-muted btn-link text-4">
                       Learn more<FaChevronRight className="text-2 ms-2" />
                     </Link>
@@ -130,7 +130,7 @@ const Fees = () => {
                     <p className="text-4 lh-base">
                       A fee for notification by sms or whatsapp
                     </p>
-                    <div className="text-primary text-10 pt-3 pb-4 mb-2">
+                    <div className="text-success text-10 pt-3 pb-4 mb-2">
                       up to 1.0%
                     </div>
                     <Link to="/" className="text-muted btn-link text-4">
@@ -154,7 +154,7 @@ const Fees = () => {
                       We always give you the mid-market rate, which is the
                       fairest exchange rate.
                     </p>
-                    <div className="text-primary text-10 pt-3 pb-4 mb-2">
+                    <div className="text-success text-10 pt-3 pb-4 mb-2">
                       up to 0.4%
                     </div>
                     <Link to="/" className="text-muted btn-link text-4">
@@ -178,7 +178,7 @@ const Fees = () => {
                       Keep using your PayConfidence Account and you will never
                       be charged an administrative fee!
                     </p>
-                    <div className="text-primary text-10 pt-3 pb-4 mb-2">Free</div>
+                    <div className="text-success text-10 pt-3 pb-4 mb-2">Free</div>
                     <Link to="/" className="text-muted btn-link text-4">
                       Learn more<FaChevronRight className="text-2 ms-2" />
                     </Link>

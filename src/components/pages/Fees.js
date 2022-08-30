@@ -59,7 +59,7 @@ const Fees = () => {
                 <div className="bg-white shadow-sm rounded p-5 text-center">
                   <div className="featured-box style-4">
                     <div className="featured-box-icon border rounded-circle shadow-none">
-                      <FaDownload style={{ marginLeft: "40px" }} />
+                      <FaDownload style={{ color: "lightgray", marginLeft: "40px" }} />
                     </div>
                     <h3 className="text-body text-7 mb-3">Service Charge</h3>
                     <p className="text-4 lh-base">
@@ -82,7 +82,7 @@ const Fees = () => {
                 <div className="bg-white shadow-sm rounded p-5 text-center">
                   <div className="featured-box style-4">
                     <div className="featured-box-icon border rounded-circle shadow-none">
-                      <FaUpload style={{ marginLeft: "40px" }} />
+                      <FaUpload style={{ color: "lightgray", marginLeft: "40px" }} />
                     </div>
                     <h3 className="text-body text-7 mb-3">Refund</h3>
                     <p className="text-4 lh-base">
@@ -103,7 +103,7 @@ const Fees = () => {
                 <div className="bg-white shadow-sm rounded p-5 text-center">
                   <div className="featured-box style-4">
                     <div className="featured-box-icon border rounded-circle shadow-none">
-                      <FaHandHoldingUsd style={{ marginLeft: "40px" }} />
+                      <FaHandHoldingUsd style={{ color: "lightgray", marginLeft: "40px" }} />
                     </div>
                     <h3 className="text-body text-7 mb-3">Disburse</h3>
                     <p className="text-4 lh-base">
@@ -124,7 +124,7 @@ const Fees = () => {
                 <div className="bg-white shadow-sm rounded p-5 text-center">
                   <div className="featured-box style-4">
                     <div className="featured-box-icon border rounded-circle shadow-none">
-                      <FaFileInvoiceDollar style={{ marginLeft: "40px" }} />
+                      <FaFileInvoiceDollar style={{ color: "lightgray", marginLeft: "40px" }} />
                     </div>
                     <h3 className="text-body text-7 mb-3">Notification Fee</h3>
                     <p className="text-4 lh-base">
@@ -147,7 +147,7 @@ const Fees = () => {
                 <div className="bg-white shadow-sm rounded p-5 text-center">
                   <div className="featured-box style-4">
                     <div className="featured-box-icon border rounded-circle shadow-none">
-                      <FaExchangeAlt style={{ marginLeft: "40px" }} />
+                      <FaExchangeAlt style={{ color: "lightgray", marginLeft: "40px" }} />
                     </div>
                     <h3 className="text-body text-7 mb-3">Currency Conversion</h3>
                     <p className="text-4 lh-base">
@@ -171,7 +171,7 @@ const Fees = () => {
                 <div className="bg-white shadow-sm rounded p-5 text-center">
                   <div className="featured-box style-4">
                     <div className="featured-box-icon border rounded-circle shadow-none">
-                      <FaUser style={{ marginLeft: "40px" }} />
+                      <FaUser style={{ color: "lightgray", marginLeft: "40px" }} />
                     </div>
                     <h3 className="text-body text-7 mb-3">Administrative fee</h3>
                     <p className="text-4 lh-base">

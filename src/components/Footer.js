@@ -81,7 +81,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg">
               <p className="text-center text-lg-start mb-2 mb-lg-0">
-                Copyright &copy; 2022 <Link to="/">PayConfidence</Link>. All
+                Copyright &copy; 2022 <Link to="/" className="text-success">PayConfidence</Link>. All
                 Rights Reserved.
               </p>
             </div>
